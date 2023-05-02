@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-3xl w-full mx-auto py-10 space-y-10">
+    <div class="max-w-3xl w-full mx-auto py-12 space-y-10">
         <form v-on:submit.prevent="post">
             <label for="body">Body</label>
             <textarea name="body" id="body" rows="4" class="border w-full p-2" v-model="form.body"></textarea>
@@ -21,6 +21,11 @@
     })
 
     const post = () => {
-        form.post(route('posts.store'))
+        form.post(route('posts.store'), {
+            preserveScroll: true,
+            onSuccess: () => {
+                form.reset()
+            }
+        })
     }
 </script>
