@@ -10,11 +10,21 @@
 
             <button type="submit">Post</button>
         </form>
+
+        <div>
+            <div v-for="post in posts" :key="post.id">
+                {{ post.created_at }}: {{ post.body }}
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
     import { useForm } from '@inertiajs/vue3'
+
+    defineProps({
+        posts: Array
+    })
 
     const form = useForm({
         body: ''
