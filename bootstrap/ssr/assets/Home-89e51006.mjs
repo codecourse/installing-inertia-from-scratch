@@ -27,10 +27,10 @@ const _sfc_main = {
       _push(ssrRenderComponent(unref(Head), null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(`<title${_scopeId}>Codecourse</title><meta name="description" content="Codecourse home"${_scopeId}>`);
+            _push2(`<title${_scopeId}>Home</title><meta name="description" content="Codecourse home"${_scopeId}>`);
           } else {
             return [
-              createVNode("title", null, "Codecourse"),
+              createVNode("title", null, "Home"),
               createVNode("meta", {
                 name: "description",
                 content: "Codecourse home"

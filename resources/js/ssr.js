@@ -9,6 +9,7 @@ createServer((page) =>
     createInertiaApp({
         page,
         render: renderToString,
+        title: title => title ? `${title} - Codecourse` : `Codecourse`,
         resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, import.meta.glob('./Pages/**/*.vue')),
         setup({ el, App, props, plugin }) {
             return createSSRApp({ render: () => h(App, props) })

@@ -377,7 +377,8 @@ createServer(
   (page) => createInertiaApp({
     page,
     render: renderToString,
-    resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, /* @__PURE__ */ Object.assign({ "./Pages/Dashboard.vue": () => import("./assets/Dashboard-576d6113.mjs"), "./Pages/Home.vue": () => import("./assets/Home-a383aac4.mjs") })),
+    title: (title) => title ? `${title} - Codecourse` : `Codecourse`,
+    resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, /* @__PURE__ */ Object.assign({ "./Pages/Dashboard.vue": () => import("./assets/Dashboard-718e1ee6.mjs"), "./Pages/Home.vue": () => import("./assets/Home-89e51006.mjs") })),
     setup({ el, App, props, plugin }) {
       return createSSRApp({ render: () => h$1(App, props) }).use(plugin).use(C, {
         ...props.initialPage.props.ziggy

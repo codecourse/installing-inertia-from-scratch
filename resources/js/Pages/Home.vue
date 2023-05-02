@@ -4,7 +4,7 @@
     <!-- <Head title="Home" /> -->
 
     <Head>
-        <title>Codecourse</title>
+        <title>Home</title>
         <meta name="description" content="Codecourse home" />
     </Head>
 </template>
