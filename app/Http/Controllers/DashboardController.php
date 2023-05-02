@@ -8,7 +8,7 @@ class DashboardController extends Controller
 {
     public function __invoke()
     {
-        sleep(3);
+        // sleep(3);
 
         return inertia()->render('Dashboard');
     }

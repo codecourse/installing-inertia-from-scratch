@@ -1,5 +1,5 @@
 <template>
-    {{ message }} <Link href="/dashboard">Dashboard</Link>
+    {{ message }} <Link :href="route('dashboard')">Dashboard</Link>
 
     <!-- <Head title="Home" /> -->
 
