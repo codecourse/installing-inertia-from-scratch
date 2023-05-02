@@ -3,6 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostIndexController;
+use App\Http\Controllers\PostStoreController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,4 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/dashboard', DashboardController::class)->name('dashboard');
 
 Route::get('/', PostIndexController::class);
+Route::post('/posts', PostStoreController::class)->name('posts.store');
