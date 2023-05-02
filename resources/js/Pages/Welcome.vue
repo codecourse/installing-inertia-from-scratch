@@ -1,3 +1,9 @@
 <template>
-    Home
+    {{ message }}
 </template>
+
+<script setup>
+    defineProps({
+        message: String
+    })
+</script>
