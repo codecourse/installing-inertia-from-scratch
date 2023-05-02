@@ -1,5 +1,5 @@
 <template>
-    {{ message }}
+    {{ message }} <Link href="/dashboard">Dashboard</Link>
 
     <!-- <Head title="Home" /> -->
 
@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-    import { Head } from '@inertiajs/vue3'
+    import { Head, Link } from '@inertiajs/vue3'
 
     defineProps({
         message: String
