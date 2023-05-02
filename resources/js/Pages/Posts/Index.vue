@@ -4,6 +4,10 @@
             <label for="body">Body</label>
             <textarea name="body" id="body" rows="4" class="border w-full p-2" v-model="form.body"></textarea>
 
+            <div v-if="form.errors.body" class="text-red-500">
+                {{ form.errors.body }}
+            </div>
+
             <button type="submit">Post</button>
         </form>
     </div>
